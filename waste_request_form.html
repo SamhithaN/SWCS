@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>WPR FORM</title>
+</head>
+
+<body>
+	
+	<header>
+	<h1>Bengaluru Waste Pickup Service</h1>
+	<font size="4"><b>Please enter the following information to place a waste pickup request</b></font> 
+	</header>
+	
+	<br><br>
+
+	<h4>Disclaimer on the Next Day Policy : Your Waste will be picked up on the next immediate day of making the Pick Up Request</h4>
+	
+	<form action="waste_request_form.php" method ="POST">
+		<label>Email ID</label><br>
+		<input type ="text" name="email" id = "email">
+		<br><br>
+		
+		
+		<h4><font size=3>Enter Type</font></h4>
+		<input type="radio" id="Commercial" name="waste_type" value="Commercial">
+ 		<label for="Commercial">Commercial</label><br>
+  		<input type="radio" id="Non-Commercial" name="waste_type" value="Non-Commercial">
+  		<label for="Non-Commercial">Non-Commercial</label><br>
+
+		<h4><font size=3>Enter Address</font></h4>
+		<font size=3>Address Line 1</font>
+		<label>(House Number, Apartment/Street Name)</label><br>
+		<input type ="text" name="add1" id = "add1" >
+		<br><br>
+		
+		<label>Area Name and Pincode</label><br>
+		<select id="pincode" name="pincode">
+			<option value="560050">Banashankari S.O. (560050) </option>
+			<option value="560102">HSR Layout S.O. (560102)</option>
+			<option value="560038">Indira Nagar S.O. (560038) </option>
+			<option value="560094">ISRO Anthariksha Bhavan S.O. (560094) </option>
+			<option value="560041">Jayanagar S.O (560041) </option>
+			<option value="560078">JP Nagar S.O. (560078) </option>
+			<option value="560034">Kormangla S.O. (560034) </option>
+			<option value="560001">Mahatma Gandhi RoadS.O. (560001) </option>
+			<option value="560003">Malleswaram (560003) </option>
+			<option value="560098">R.R. Nagar (560098) </option>
+			<option value="560066">Whitefield S.O. (560066) </option>
+			</select>
+		
+		<br><br>
+
+		<h4><label>Category</label></h4>
+		<select id="waste" name="waste">
+		<option value="Organic">Organic</option>
+		<option value="Plastic">Plastic</option>
+		<option value="Medical">Medical</option>
+		<option value="Chemical">Chemical</option>
+		<option value="Ewaste">Electronic</option>
+		</select>
+		<br><br>
+
+		<h4><label>Weight in kgs </label><br></h4>
+		<input type="number" step="0.01" min=0 name="weight">
+		<br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>
