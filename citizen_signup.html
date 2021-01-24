@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Information</title>
+</head>
+
+<body>
+	
+	<header>
+	<h1>Citizen Registration</h1>
+	<font size="4"><b>Please enter your information for the following fields</b></font> 
+	</header>
+	
+	<br><br>
+	
+	<form action = "citizen_signup.php" method = "POST">
+		<label>First Name</label><br>
+		<input type ="text" name="fname" id="fname">
+		<br><br> 
+
+		<label>Last Name</label><br>
+		<input type ="text" name="lname" id = "lname">
+        <br><br>
+        
+        <label>Gender</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label>
+		<br><br>
+
+		<label>Contact number</label><br>
+		<input type ="text" name="phone" id = "phone">
+		<br><br>
+
+		<label>Address</label><br>
+		<input type ="text" name="address" id = "address">
+		<br><br>
+	
+
+		<label>Email ID</label><br>
+		<input type ="text" name="email" id = "email">
+		<br><br>
+
+		<label>Set Password</label><br>
+		<input type ="text" name="password" id = "password">
+		<br><br>
+
+		<input type="submit" value="Submit">
+	</form>
+
+</body>
+
+</html>
